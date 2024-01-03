@@ -1,33 +1,33 @@
-html, body {
+.html, body {
     height: 100%;
     font-family: 'Signika Negative', sans-serif;
     font-size: 25px;
 }
 
-html {
+.html {
     background: url('');
     background-size: 100%;
 }
 
-div {
+.div {
     overflow: hidden;
 }
 
-a {
+.a {
     color: #322bff;
     text-decoration: underline;
     transition: 500ms;
 }
 
-a:hover {
+.a:hover {
     color: #26a1ff;
 }
 
-p {
+.p {
     padding: 0 5%;
 }
 
-img {
+.img {
     box-shadow: 0px 0px 4px #000;
 }
 
