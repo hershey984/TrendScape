@@ -1,0 +1,252 @@
+html, body {
+    height: 100%;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 25px;
+}
+
+html {
+    background: url('https://img.freepik.com/free-vector/blank-blue-leafy-poster_53876-99945.jpg?w=740&t=st=1699040713~exp=1699041313~hmac=e7675c60c7acc65bb1ecef03f7b04379d7cc7719fd3915bca68673658875da1d') fixed;
+    background-size: 100%;
+}
+
+h1 {
+    font-size:50px;
+}
+
+div {
+    overflow: hidden;
+}
+
+
+
+a {
+    color: #322bff;
+    text-decoration: underline;
+    transition: 500ms;
+}
+
+a:hover {
+    color: #26a1ff;
+}
+
+p {
+    padding: 0 5%;
+}
+
+img {
+    box-shadow: 0px 0px 4px #000;
+}
+
+#header {
+    background: rgba(255, 255, 255, .5);
+    padding: 3px;
+    overflow: hidden;
+    height: 75px;
+}
+
+#header img {
+    float: left;
+    box-shadow: none;
+    min-width: 70px;
+    min-height: 75px;
+}
+
+#header ul {
+    list-style: none;
+    float: left;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+#header ul li {
+    float: left;
+    margin-left: 10px;
+    font-size: 20px;
+
+}
+
+.fullscreen {
+    height: 95%;
+    position: relative;
+}
+
+.fullscreen .header {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    text-shadow: 0px 0px 2px #000;
+}
+
+.white {
+    background: #eeeeec;
+    padding: 0 5%;
+}
+
+.nobg {
+    background: none;
+    padding: 0 5%;
+    color: #fff;
+    text-shadow: 0px 0px 4px #000;
+}
+
+.semitrans {
+    background: rgba(255, 255, 255, .5);
+    padding: 0 5%;
+}
+
+.dark {
+    color: #eeeeec;
+    background: #010105;
+    padding: 0 5%;
+}
+
+.nopadding {
+    padding: 0;
+}
+
+.floatleft {
+    float: left;
+    margin: 2%;
+}
+
+.floatright {
+    float: right;
+    margin: 2%;
+}
+
+.more {
+    text-align: center;
+    font-size: 17px;
+}
+
+.more a {
+    color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.more a:hover {
+    color: #777;
+}
+
+.homebutton {
+    background-color:rgba(108, 137, 192, 0.452);
+    color: rgb(255, 253, 253);
+    text-align: center;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border:none;
+    cursor: pointer;
+}
+
+.aboutbutton {
+    background-color:rgba(108, 137, 192, 0.452);
+    color: rgb(255, 253, 253);
+    text-align: center;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border:none;
+    cursor: pointer;
+
+}
+
+.categoriesbutton {
+    background-color:rgba(108, 137, 192, 0.452);
+    color: rgb(255, 253, 253);
+    text-align: center;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border:none;
+    cursor: pointer;
+}
+
+.explorebutton {
+    background-color:rgba(108, 137, 192, 0.452);
+    color: rgb(255, 253, 253);
+    text-align: center;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border:none;
+    cursor: pointer;
+}
+
+.contactbutton {
+    background-color:rgba(108, 137, 192, 0.452);
+    color: rgb(255, 253, 253);
+    text-align: center;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border:none;
+    cursor: pointer;
+}
+
+.loginbutton {
+    background-color:rgba(108, 137, 192, 0.452);
+    color: rgb(7, 1, 1);
+    text-align: center;
+    font-size: 20px;
+    margin-left: 300px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border:none;
+    cursor: pointer;
+}
+.verline {
+    border-left: 2px solid #000;
+    height: 60px;
+}
+
+button:hover {
+    background-color: #000;
+}
+
+.loginbutton:hover {
+    background-color: crimson;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 177px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdowncontent a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdowncontent a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdowncontent {
+    display: block;
+}
