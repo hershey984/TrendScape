@@ -1,0 +1,83 @@
+.saveart{
+    position: absolute;
+    z-index: 1;
+    bottom: 90px;
+    right:20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.design {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    backdrop-filter: blur(2px);
+}
+
+.dropcon {
+    position: relative;
+    display: none;
+    background-color: #0000005e;
+    padding: 5px;
+    color:white;
+    flex-wrap: wrap;
+    margin-left: 15vh;
+    margin-right: 15vh;
+    margin-top: 5px;
+    border:none;
+}
+
+.artcon {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.artimg {
+    height: 450px;
+    width: 400px;
+    transition: 0.5s ease;
+    border-style: none;
+    margin-left: 0px;
+}
+
+.navbar{
+    position: fixed;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.856);
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    max-height: 90px;
+    overflow: hidden;
+}
+
+.navbar a{
+    margin-left: 57px;
+    margin-right: 57px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color:rgba(58, 81, 124, 0.308);
+    color: #f2f2f2;
+    justify-content: center;
+    float: left;
+    display: flex;
+    text-decoration: none;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.navbar .onpage {
+    background-color: #4a16cce1;
+}
+
+.navbar :hover{
+    background-color: #4a16cce1;
+}

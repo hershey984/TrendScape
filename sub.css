@@ -1,0 +1,448 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 25px;
+    margin: 0;
+}
+
+h1 {
+    font-size:50px;
+}
+
+div {
+    overflow: hidden;
+}
+
+a {
+    color: #322bff;
+    text-decoration: underline;
+    transition: 500ms;
+}
+
+a:hover {
+    color: #26a1ff;
+}
+
+p {
+    padding: 0 5%;
+    box-shadow: none;
+}
+
+
+img {
+    box-shadow: 0px 0px 4px #000;
+}
+
+#header {
+    background: rgba(255, 255, 255, .5);
+    padding: 3px;
+    overflow: hidden;
+    height: 75px;
+}
+
+#header img {
+    float: left;
+    box-shadow: none;
+    min-width: 70px;
+    min-height: 75px;
+}
+
+#header ul {
+    list-style: none;
+    float: left;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+#header ul li {
+    float: left;
+    margin-left: 10px;
+    font-size: 20px;
+
+}
+
+footer {
+    background-color: lightseagreen;
+    backdrop-filter: blur(3px);
+    padding-left: 500px;
+    padding-right: 500px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.fullscreen {
+    height: 95%;
+    position: relative;
+}
+
+.fullscreen .header {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    text-shadow: 0px 0px 2px #000;
+}
+
+.white {
+    background: #eeeeec;
+    padding: 0 5%;
+}
+
+.nobg {
+    background: none;
+    padding: 0 5%;
+    color: #fff;
+    text-shadow: 0px 0px 4px #000;
+}
+
+.semitrans {
+    background: rgba(255, 255, 255, .5);
+    padding: 0 5%;
+}
+
+.dark {
+    color: #eeeeec;
+    background: #010105;
+    padding: 0 5%;
+}
+
+.nopadding {
+    padding: 0;
+}
+
+.floatleft {
+    float: left;
+    margin: 2%;
+}
+
+.floatright {
+    float: right;
+    margin: 2%;
+}
+
+.more {
+    text-align: center;
+    font-size: 17px;
+}
+
+.more a {
+    color: #aaa;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.more a:hover {
+    color: #777;
+}
+
+.verline {
+    border-left: 2px solid #000;
+    height: 60px;
+}
+
+button:hover {
+    background-color: #000;
+}
+
+.loginbutton:hover {
+    background-color: crimson;
+}
+
+.artcon {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.artimg {
+    height: 450px;
+    width: 400px;
+    transition: 0.5s ease;
+    border-style: none;
+    margin-left: 0px;
+}
+
+
+.dropcon {
+    position: relative;
+    display: none;
+    background-color: #0000005e;
+    padding: 5px;
+    color:white;
+    flex-wrap: wrap;
+    margin-left: 15vh;
+    margin-right: 15vh;
+    margin-top: 5px;
+    border:none;
+}
+
+
+
+.itemspecs {
+    display: block;
+    background-color: #0026d185;
+    padding: 10px;
+    color:white;
+    border: 1px solid #ccc;
+}
+
+.womentop {
+    height: 170px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    color: white;
+    position:relative;
+    overflow: hidden;
+    margin-top: 10px;
+    padding-bottom: 35px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.womentop :hover {
+    background-color: #f522ea;
+    color: black;
+    text-decoration: solid;
+}
+
+.womentop h1{
+    font-size: 50px;
+    color: #f522ea;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-decoration: underline;
+    
+}
+
+.mentop {
+    height: 170px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    color: white;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+.mentop h1{
+    font-size: 50px;
+    color: #f522ea;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.mensbody { 
+    height: 100%;
+    background: linear-gradient(180deg, rgba(60, 144, 165, 0.575) 0%, rgba(121, 223, 227, 0.616) 30%, rgba(58, 104, 173, 0.589)0%);
+    background-blend-mode: hard-light;
+    margin: 0;
+}
+
+
+.fullwidth {
+    width: 100%;
+}
+
+.design {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    backdrop-filter: blur(2px);
+}
+
+.design :hover{
+    box-shadow: 112px 0 115px -4px rgba(31, 73, 125, 0.8), 112px 0 80px -4px rgba(31, 73, 125, 0.8);
+	background: rgba(255, 255, 255, 0.05);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 30px;
+	text-decoration: none;
+    color: #000;
+	overflow: hidden;
+	font-weight: 400px;
+	backdrop-filter: blur(15px);
+}
+
+.navbar{
+    position: fixed;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.856);
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    max-height: 90px;
+    overflow: hidden;
+}
+
+.navbar a{
+    margin-left: 57px;
+    margin-right: 57px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color:rgba(58, 81, 124, 0.308);
+    color: #f2f2f2;
+    justify-content: center;
+    float: left;
+    display: flex;
+    text-decoration: none;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.navbar .onpage {
+    background-color: #4a16cce1;
+}
+
+.navbar :hover{
+    background-color: #4a16cce1;
+}
+
+.Lwindow{
+    position:fixed;
+    overflow: hidden;
+    float: left;
+    background-color:#f522ea;
+    height: 100%;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    width: 20%;
+    color: white;
+}
+
+
+.border{
+    position: fixed;
+    overflow: hidden;
+    background-color: #000;
+    width: 20px;
+    height: 100%;
+}
+
+.subnavlogo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px; 
+    z-index: 2;
+}
+
+.subnavlogo img {
+    width: 140px; 
+    height: 130px; 
+    margin-right: 35px;
+}
+
+.itemspecs{
+    display: none;
+    background-color: lightskyblue;
+}
+
+.searchcontainer{
+    background-color: rgb(0, 194, 184);
+    border: black 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    z-index: 3;
+}
+
+.searchcontainer button {
+    height: 67px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 60px;
+}
+
+.formcontainer input[type= "text"]{
+    height: 45px;
+    width: 500px;
+    padding: 10px 13px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.searchsug {
+    list-style: none;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 15%;
+    left: 74.5%;
+    right: 30px;
+    width: 100%;
+    color: white;
+    border: 1px solid #ccc;
+    z-index: 1000;
+}
+
+#searchsug li {
+    cursor: pointer;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+#searchsug li:hover{
+    background-color: aqua;
+}
+
+.saveart{
+    position: absolute;
+    z-index: 1;
+    bottom: 90px;
+    right:20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/*keep media at last or some of it wont work */
+
+@media screen and (max-width: 850px) {
+    .navbar {
+        overflow-y: hidden;
+    }
+
+    .navbar a{
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .Lwindow{
+        width: 10%;
+    }
+
+    .subnavlogo img {
+        width: 100px; 
+        height: 90px; 
+        margin-right: 5px;
+        margin-bottom: 60px;
+    }
+
+    .formcontainer input[type= "text"]{
+        height: 45px;
+        width: auto;
+        padding: 10px 13px;
+        border: 1px solid black;
+        border-radius: 5px;
+        font-size: 20px;
+        margin-top: 5px;
+    }
+}
