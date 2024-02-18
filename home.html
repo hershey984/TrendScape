@@ -21,7 +21,7 @@
     <div class="navbuttons">
       <button id="searchglass" onclick="opensearch()"><i class="fas fa-search"></i></button>
       <a href=""><i class="fas fa-bell"></i></a>
-      <a href=""><i class="fas fa-shopping-bag"></i></a>
+      <a href="user.html"><i class="fas fa-shopping-bag"></i></a>
       <a href="login.html">Login</a>
   </div>
   <div class="formcontainer">
@@ -39,7 +39,7 @@
     <div class="herotext">
       <h1><i>STAY AHEAD OF THE CURVE!</i></h1>
     </div>
-    <div class="herobox">
+    <!-- <div class="herobox">
       <div class="shirts herotile">
         <p>SHIRTS</p>
       </div>
@@ -57,6 +57,39 @@
       </div>
       <div class="deals herotile">
         <p>DEALS</p>
+      </div>
+    </div> -->
+    <div class="herobox">
+      <div class="shirts herotile leftht">
+        <div class="hero-img"></div>
+        <div class="hero-text">
+          <p>SHIRTS</p>
+        </div>
+      </div>
+      <div class="tees herotile leftht">
+        <div class="hero-img"></div>
+        <div class="hero-text">
+          <p>TEES</p>
+        </div>
+      </div>
+      <div class="shorts herotile leftht">
+        <div class="hero-img"></div>
+        <div class="hero-text">
+          <p>SHORTS</p>
+        </div>
+      </div>
+      <div class="trainers herotile rightht">
+        <div class="hero-img">
+        </div>
+        <div class="hero-text">
+          <p>TRAINERS</p>
+        </div>
+      </div>
+      <div class="formals herotile rightht">
+        <div class="hero-img"></div>
+        <div class="hero-text">
+          <p>FORMALS</p>
+        </div>
       </div>
     </div>
   </div>
@@ -92,7 +125,82 @@
   </div>
 </div>
 </div>
+<div class="navigation">
+  <ul>
+      <li class="list active">
+          <a href="home.html">
+              <span class="icon">
+                  <i class="fa-solid fa-house"></i>
+              </span>
+              <span class="text">Home</span>
+              <span class="circle"></span>
+          </a>
+      </li>
+      <li class="list">
+          <a href="men.html">
+              <span class="icon">
+                  <i class="fa-solid fa-mars"></i>
+              </span>
+              <span class="text">Men</span>
+              <span class="circle"></span>
+          </a>
+      </li>
+      <li class="list">
+          <a href="women.html">
+              <span class="icon">
+                  <i class="fa-solid fa-venus"></i>
+              </span>
+              <span class="text">Women</span>
+              <span class="circle"></span>
+          </a>
+      </li>
+      <li class="list">
+          <a href="kids.html">
+              <span class="icon">
+                  <i class="fa-solid fa-child-reaching"></i>
+              </span>
+              <span class="text">Kids</span>
+              <span class="circle"></span>
+          </a>
+      </li>
+      <li class="list">
+          <a href="accessories.html">
+              <span class="icon">
+                  <i class="fa-solid fa-hat-cowboy"></i>
+              </span>
+              <span class="text">Accesories</span>
+              <span class="circle"></span>
+          </a>
+      </li>
+      <li class="list">
+          <a href="user.html">
+              <span class="icon">
+                  <i class="fa-solid fa-user"></i>
+              </span>
+              <span class="text">User</span>
+              <span class="circle"></span>
+          </a>
+      </li>
+      <div class="indicator"></div>
+  </ul>
+</div>
+<footer>
+  <div class="flogo">
+    <img src="data:image/png;base64,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" width="70px" alt="logo">
+  </div>
+  <div class="ftitle">
+    <h1>TrendScape</h1>
+  </div>
+  <div class="about">
+    <h2>About us</h2>
+    <p>This project was made by team ScriptSage.</p>
+    <p>Group members: Syed Mohd Jawad , Owais Haider Rizvi, Dev Rathor, Harsh Sawant.</p>
+    <p>New content will be added.</p>
+
+  </div>
+</footer>
 <script src="home.js"></script>
+<script src="new.js"></script>
 </body>
 </html>
 
