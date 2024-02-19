@@ -1,10 +1,7 @@
 <?php
 session_start();
 
-if(isset($_SESSION["username"])){
-    header("Location: home.html");
-    exit();
-}
+
 
 if(isset($_POST['username'], $_POST['passw'])) {
     $username = $_POST['username'];
@@ -47,6 +44,7 @@ if(isset($_POST['username'], $_POST['passw'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="logstyle.css">
 </head>
 <body>
 <?php if(isset($error)) echo "<p>$error</p>"; ?>
