@@ -222,17 +222,32 @@ footer {
 
 .womentop h1{
     font-size: 50px;
-    color: #f522ea;
     display: flex;
     justify-content: center;
     position: relative;
 }
-.womentop h1,h2 {
-    transition: .5s;
-}
-.womentop h1:hover, h2:hover{
-    color: crimson;
-}
+
+h1 {
+    background: #6AA877;
+    background: linear-gradient(45deg, #c72388, #e70f0f);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite ;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 3.2em;
+    }
+    @keyframes color {
+        0%{
+            background-position: 0 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0 50%;
+        }
+    }
+
 .womentop img {
     height: 0px;
     width: 20px;
