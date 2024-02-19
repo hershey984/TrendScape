@@ -1,5 +1,44 @@
 <?php
-    include("logincon.php");   
+session_start();
+
+if(isset($_SESSION["username"])){
+    header("Location: home.html");
+    exit();
+}
+
+if(isset($_POST['username'], $_POST['passw'])) {
+    $username = $_POST['username'];
+    $passw = $_POST['passw'];
+
+    $servername = "localhost";
+    $db_username = "root";
+    $db_password = "";
+    $database = "clientinfo";
+
+    $conn = new mysqli($servername, $db_username, $db_password, $database);
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    $sql = "SELECT * FROM login WHERE username = '$username'";
+    $result = $conn->query($sql);
+
+    if($result && $result->num_rows == 1) {
+        $row = $result->fetch_assoc();
+        if(password_verify($passw, $row['passw'])) {
+            $_SESSION["username"] = $username;
+            header("Location: home.html");
+            exit();
+        } else {
+            $error = "Incorrect password";
+        }
+    } else {
+        $error = "User not found";
+    }
+
+    $conn->close();
+}
 ?>
 
 <!DOCTYPE html>
@@ -7,34 +46,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIGN-UP</title>
-    <link rel="stylesheet" href="logstyle.css">
-    <script src="logscript.js" defer></script>
-    <meta name="google-signin-client_id" content="752569437279-m81gn5ppqdrv112iaap5p5ufl0rdh6ii.apps.googleusercontent.com">
+    <title>Login</title>
 </head>
 <body>
-    <div class="centercontainer">
+<?php if(isset($error)) echo "<p>$error</p>"; ?>
+<div class="centercontainer">
         <div class="frost">
             <h2 style="color:white">REGISTER HERE</h2>
             <div class="loginbox">
             <br>
             <br>
             <form id="signupForm" method="post" class="formtext">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
+            <label for="username">Username:</label>
+                <input type="text" id="username"  name="username" required>
                 <br>
                 <br>
                 <label for="password">Password:</label>
                 <input type="password" id="passw" name="passw" required>
                 <br>
                 <br>
-                <button type="submit" onclick="login()" value="login">Login</button>
+                <button type="submit" value="login">Login</button>
             </form>
-            <div class="g-signin2" data-onsuccess="onSignIn"></div>
-            </div> 
+            <p>New User -><a href="reg.php">Click Here</a></p>
         </div>
     </div>
-    <script src="logscript.js" defer></script>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</div>
 </body>
 </html>

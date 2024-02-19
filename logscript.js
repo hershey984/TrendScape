@@ -1,6 +1,8 @@
 function login() {
     var usern = document.getElementById('username').value;
-    var pass = document.getElementById('password').value;
+    var pass = document.getElementById('passw').value;
+    var mail = document.getElementById('email').value;
+    var con = document.getElementById('contact').value;
     if(usern.length == '' && pass.length == ''){
         alert('Username and Password Field is empty');
         return false;
