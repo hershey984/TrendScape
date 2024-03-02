@@ -56,6 +56,21 @@ function opensearch() {
     searchContainer.classList.toggle('show');
 }
 
+function select(element) {
+    var selectedArticleName = element.innerText.toLowerCase();
+
+    var selectedArticle = articles.find(function(article) {
+        return article.name.toLowerCase() === selectedArticleName;
+    });
+
+    if (selectedArticle) {
+        var fullURL = selectedArticle.page + '#' + selectedArticle.id;
+        window.location.href = fullURL;
+    } else {
+        alert('Selected article not found');
+    }
+}
+
 window.addEventListener('DOMContentLoaded', function() {
     function search() {
         var searchTerm = document.getElementById('searchinput').value.toLowerCase();
@@ -94,11 +109,11 @@ input.onkeyup = function (e) {
         suggestions = articleskids.map(function(article){
             return article.name;
         });
-    }else if(currentPage.includes("men.html")) {
+    }else if(currentPage.includes("men.php")) {
         suggestions = articlesmen.map(function(article){
             return article.name;
         });
-    }else if(currentPage.includes("accessories.html")) {
+    }else if(currentPage.includes("accessories.php")) {
         suggestions = articlesacc.map(function(article) {
             return article.name;
         });
@@ -122,11 +137,13 @@ input.onkeyup = function (e) {
             var sugbox = document.getElementById('searchsug');
             sugbox.style.display = (sugbox.style.display === 'block') ? 'none' : 'block';
 
-            var dislist = sugbox.querySelectorAll("li");
-
-            for (var i = 0; i < dislist.length; i++) {
-                dislist[i].setAttribute("onclick", "select(this)");
-            }
+            document.getElementById('searchsug').addEventListener('click', function(event) {
+                var target = event.target;
+            
+                if (target.tagName === 'LI') {
+                    select(target);
+                }
+            });
 
             showsug(a);
         } else {
