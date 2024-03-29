@@ -21,19 +21,16 @@ function dropart(dropdownID) {
     for(var i = 0; i < designs.length; i++) {
         var design = designs[i];
         if(dropdownContent.style.display === 'flex'){
-            design.style.width = '640px'; // Adjust width when dropdown is open
+            design.style.width = '640px'; 
         } else {
-            design.style.width = ''; // Reset width when dropdown is closed
+            design.style.width = ''; 
         }
     }
 
 
 }
 var articles = [
-    { id: "women1", name: "Clara real leather jacket in black", page: "women.php" },
-    { id: "women3", name: "aaa", page: "women.php" },
-    { id: "women4", name: "aab", page: "women.php" },
-    { id: "artimg1", name: "aaa", page: "women.php" },
+    { id: "artimg1", name: "Clara leather jacket black", page: "women.php" },
     { id: "artimg2", name: "aab", page: "women.php" },
     { id: "artimg3", name: "aac", page: "kids.php" },
     { id: "artimg4", name: "aad", page: "kids.php" },
