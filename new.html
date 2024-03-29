@@ -1,3 +1,12 @@
+session_start();
+
+if($_SESSION["username"] != "admin") {
+    header("Location: home.html");
+    exit();
+} else {
+    echo "Welcome to Admin";
+}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
