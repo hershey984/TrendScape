@@ -30,6 +30,9 @@ function dropart(dropdownID) {
 
 }
 var articles = [
+    { id: "women1", name: "Clara real leather jacket in black", page: "women.php" },
+    { id: "women3", name: "aaa", page: "women.php" },
+    { id: "women4", name: "aab", page: "women.php" },
     { id: "artimg1", name: "aaa", page: "women.php" },
     { id: "artimg2", name: "aab", page: "women.php" },
     { id: "artimg3", name: "aac", page: "kids.php" },
